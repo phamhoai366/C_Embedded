@@ -65,7 +65,7 @@ int main() {
 
         if (fds[1].revents & POLLIN) {
             if (fgets(message, BUFFER_SIZE, stdin) != NULL) {
-                str_trim_lf(message, BUFFER_SIZE);
+                // str_trim_lf(message, BUFFER_SIZE);
 
                 // Ensure the message_with_number buffer is large enough
                 char message_with_number[BUFFER_SIZE + 20];

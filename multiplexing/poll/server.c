@@ -112,6 +112,7 @@ int main() {
                 } else {
                     // Echo back the message that came in
                     buffer[valread] = '\0';
+                    printf("%s\n", buffer);
                     for (int j = 1; j <= max_clients; j++) {
                         if (fds[j].fd != -1 && fds[j].fd != sd) {
                             send(fds[j].fd, buffer, strlen(buffer), 0);

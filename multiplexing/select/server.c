@@ -132,6 +132,7 @@ int main() {
                 } else {
                     // Echo back the message that came in
                     buffer[valread] = '\0';
+                    printf("%s\n", buffer);
                     for (int j = 0; j < max_clients; j++) {
                         if (client_socket[j] != 0 && client_socket[j] != sd) {
                             send(client_socket[j], buffer, strlen(buffer), 0);
