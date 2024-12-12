@@ -21,15 +21,15 @@
 
 ### Compilation and Execute
 * Compilation:
-```sh
+```
 make
 ```
 * Execute the server
-```sh
+```
 ./server
 ```
 * Execute the client
-```sh
+```
 ./client
 ```
 ## Socket
